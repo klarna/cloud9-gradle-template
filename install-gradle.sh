@@ -7,5 +7,6 @@ rm -f gradle-2.3-bin.zip
 echo 'GRADLE_HOME=~/gradle-2.3' >> ~/.profile
 echo 'PATH=$GRADLE_HOME/bin:$PATH' >> ~/.profile
 source ~/.profile
+cd workspace
 
 

@@ -13,3 +13,13 @@ interface. Go to the terminal tab and run `source insta-gradle.sh`.
 This will install Gradle and set some environment variables. When the script
 finishes you should be able to run `gradle clean run` and see a "Hello World"
 message printed out in the console.
+
+## Caveats
+By default, when you create a new workspace it gets created with a "Micro" size.
+This means that you get 512MB of RAM. 
+Unfortunately Gradle is quite greedy and needs more than that for simple tasks.
+So if you try to do a `gradle test` on this very basic project, Cloud9 will kill
+the process and then Gradle will of course fail.
+To solve this you have to manually resize your workspace to at least a "Medium"
+size. You can see how to do that
+[here](https://c9.io/site/blog/2015/02/workspace-stats).

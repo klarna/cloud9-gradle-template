@@ -9,7 +9,7 @@ Paste the URL of this repository and click on "Create".
 
 Once your repository is created you will see a "Start editing" option on your
 Dashboard. If you click there you will see a new window with an IDE-like
-interface. Go to the terminal tab and run `source insta-gradle.sh`.
+interface. Go to the terminal tab and run `source install-gradle.sh`.
 This will install Gradle and set some environment variables. When the script
 finishes you should be able to run `gradle clean run` and see a "Hello World"
 message printed out in the console.
